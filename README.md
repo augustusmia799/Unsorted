@@ -1,0 +1,2 @@
+# Unsorted
+#include "ArrayMultiColSort.au3" #include &lt;String.au3> ; Only used to fill array  ; Create and display array Global $aArray[100][4] For $i = 0 To 99     $aArray[$i][0] = _StringRepeat(Chr(Random(65, 68, 1)), 5)     $aArray[$i][1] = _StringRepeat(Chr(Random(74, 77, 1)), 5)     $aArray[$i][2] = _StringRepeat(Chr(Random(80, 83, 1)), 5)     $aArray[$i][3] = _StringRepeat(Chr(Random(87, 90, 1)), 5) Next _ArrayDisplay($aArray, "Unsorted")  ; Copy arrays for separate examples below $aArray_1 = $aArray $aArray_2 = $aArray
